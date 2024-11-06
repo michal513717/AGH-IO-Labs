@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animowana Twarz</title>
     <link rel="stylesheet" href="../src/face.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 
@@ -15,10 +16,23 @@
     <div class="eyes" style="left: 60%;">
         <div class="pupil"></div>
     </div>
-    <div class="mouth"></div>
+    <div class="mouth" id="mouth"></div>
+</div>
+
+<div class="input-box">
+    <div class="mic" id="mic" onclick="mic_click();">
+        <i class="material-icons i-mic">micro</i>
+    </div>
+    <textarea class="input" id="in-out"></textarea>
+    <div class="send" id="send-button" onclick="speak('Witaj dziecko');">
+        Send
+        <i class="material-icons i-mic">send</i>
+    </div>
 </div>
 
 <script src="../src/face.js"></script>
+<script src="../src/input.js"></script>
+<script src="../src/talker.js"></script>
 
 </body>
 </html>
